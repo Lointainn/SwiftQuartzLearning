@@ -9,7 +9,13 @@
 import UIKit
 
 class ListTableViewController: UITableViewController {
-
+    @IBAction func rightBtn(_ sender: UIBarButtonItem) {
+        
+    }
+    @IBAction func oneBtn(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

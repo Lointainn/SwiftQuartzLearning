@@ -16,6 +16,9 @@
 		5DA701C61F277E1E00B47661 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C51F277E1E00B47661 /* ListTableViewController.swift */; };
 		5DA701C81F27817300B47661 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C71F27817300B47661 /* FirstView.swift */; };
 		5DA701CA1F278CFB00B47661 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C91F278CFB00B47661 /* SecondView.swift */; };
+		947D5F891F28749C001D56B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F881F28749C001D56B3 /* SecondViewController.swift */; };
+		947D5F8B1F288460001D56B3 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F8A1F288460001D56B3 /* DashViewController.swift */; };
+		947D5F8D1F288473001D56B3 /* DashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F8C1F288473001D56B3 /* DashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		5DA701C51F277E1E00B47661 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		5DA701C71F27817300B47661 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		5DA701C91F278CFB00B47661 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		947D5F881F28749C001D56B3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		947D5F8A1F288460001D56B3 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
+		947D5F8C1F288473001D56B3 /* DashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,9 @@
 				5DA701C51F277E1E00B47661 /* ListTableViewController.swift */,
 				5DA701C71F27817300B47661 /* FirstView.swift */,
 				5DA701C91F278CFB00B47661 /* SecondView.swift */,
+				947D5F881F28749C001D56B3 /* SecondViewController.swift */,
+				947D5F8A1F288460001D56B3 /* DashViewController.swift */,
+				947D5F8C1F288473001D56B3 /* DashView.swift */,
 				5DA7019B1F277D8E00B47661 /* Main.storyboard */,
 				5DA7019E1F277D8E00B47661 /* Assets.xcassets */,
 				5DA701A01F277D8E00B47661 /* LaunchScreen.storyboard */,
@@ -265,6 +274,9 @@
 				5DA701C61F277E1E00B47661 /* ListTableViewController.swift in Sources */,
 				5DA701C81F27817300B47661 /* FirstView.swift in Sources */,
 				5DA701CA1F278CFB00B47661 /* SecondView.swift in Sources */,
+				947D5F891F28749C001D56B3 /* SecondViewController.swift in Sources */,
+				947D5F8D1F288473001D56B3 /* DashView.swift in Sources */,
+				947D5F8B1F288460001D56B3 /* DashViewController.swift in Sources */,
 				5DA701981F277D8E00B47661 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +542,7 @@
 				5DA701BE1F277D8E00B47661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA701BF1F277D8E00B47661 /* Build configuration list for PBXNativeTarget "SwiftQuartzLearningTests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +551,7 @@
 				5DA701C11F277D8E00B47661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DA701C21F277D8E00B47661 /* Build configuration list for PBXNativeTarget "SwiftQuartzLearningUITests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +560,7 @@
 				5DA701C41F277D8E00B47661 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

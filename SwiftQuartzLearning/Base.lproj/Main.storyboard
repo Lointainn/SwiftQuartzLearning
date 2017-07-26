@@ -17,6 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AGi-Jc-G6F">
+                            <rect key="frame" x="0.0" y="132" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="oneBtn:" destination="w68-m6-g9J" eventType="touchUpInside" id="ZLc-tn-26x"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection id="AHN-RO-N4T">
                                 <cells>
@@ -76,6 +84,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="glY-yi-aQG" kind="show" id="WDB-ua-vx9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -85,7 +96,13 @@
                             <outlet property="delegate" destination="w68-m6-g9J" id="hFp-IC-J2T"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fxp-su-tOy"/>
+                    <navigationItem key="navigationItem" id="fxp-su-tOy">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="GZl-2m-Q3z">
+                            <connections>
+                                <action selector="rightBtn:" destination="w68-m6-g9J" id="eXk-ek-oTb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0VP-O4-keK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +119,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ibp-2m-Vhf" customClass="FirstView" customModule="SwiftQuartzLearning" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,27 +130,111 @@
             </objects>
             <point key="canvasLocation" x="1917.5999999999999" y="491.60419790104953"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="NhN-sM-9zU">
             <objects>
-                <viewController id="9jP-Hx-prf" sceneMemberID="viewController">
+                <viewController id="9jP-Hx-prf" customClass="SecondViewController" customModule="SwiftQuartzLearning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="9td-xj-H05">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avb-j3-ccd" customClass="SecondView" customModule="SwiftQuartzLearning" customModuleProvider="target">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="avb-j3-ccd" customClass="SecondView" customModule="SwiftQuartzLearning" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YoD-Md-z88">
+                                        <rect key="frame" x="97" y="489" width="182" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="butt"/>
+                                            <segment title="round"/>
+                                            <segment title="square"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="capSegment:" destination="9jP-Hx-prf" eventType="valueChanged" id="O3d-ir-3ke"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jek-Kw-r6V">
+                                        <rect key="frame" x="97" y="544" width="182" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="miter"/>
+                                            <segment title="round"/>
+                                            <segment title="bevel"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="joinSegment:" destination="9jP-Hx-prf" eventType="valueChanged" id="nCZ-gB-HWb"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="UVz-XG-KaW">
+                                        <rect key="frame" x="60" y="602" width="254" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="widthSlider:" destination="9jP-Hx-prf" eventType="valueChanged" id="Ati-Nv-PNv"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="XaQ-fe-vdu"/>
                     </view>
+                    <connections>
+                        <outlet property="capSegment" destination="YoD-Md-z88" id="nTM-R0-iWD"/>
+                        <outlet property="joinSegment" destination="jek-Kw-r6V" id="Bme-wo-f3r"/>
+                        <outlet property="second" destination="avb-j3-ccd" id="hbE-cZ-wzd"/>
+                        <outlet property="widthSlider" destination="UVz-XG-KaW" id="4ol-BN-cC2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEf-oB-eeN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2596" y="491.60419790104953"/>
+        </scene>
+        <!--Dash View Controller-->
+        <scene sceneID="gHQ-Rw-OdA">
+            <objects>
+                <viewController id="glY-yi-aQG" customClass="DashViewController" customModule="SwiftQuartzLearning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="Elu-lc-a8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmd-uH-WsT" customClass="DashView" customModule="SwiftQuartzLearning" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-100" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YRP-w4-dne">
+                                        <rect key="frame" x="-2" y="637" width="379" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="phaseSlider:" destination="glY-yi-aQG" eventType="valueChanged" id="EwP-p0-8jh"/>
+                                        </connections>
+                                    </slider>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cD6-6K-sDj">
+                                        <rect key="frame" x="0.0" y="601" width="375" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="10-10"/>
+                                            <segment title="5-10-20-40-80"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="patternsSegment:" destination="glY-yi-aQG" eventType="valueChanged" id="TMH-6W-En8"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8NY-z8-Iua"/>
+                    </view>
+                    <connections>
+                        <outlet property="dash" destination="kmd-uH-WsT" id="Kfn-vc-W33"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geH-54-fDb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1985" y="1162"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mKb-3F-sou">
