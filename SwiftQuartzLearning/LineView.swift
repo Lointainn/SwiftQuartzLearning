@@ -1,5 +1,5 @@
 //
-//  FirstView.swift
+//  LineView.swift
 //  SwiftQuartzLearning
 //
 //  Created by Tusky on 2017/7/25.
@@ -8,12 +8,8 @@
 
 import UIKit
 
-class FirstView: UIView {
+class LineView: UIView {
 
-    override func layoutSubviews() {
-//        backgroundColor = UIColor.yellow
-    }
-    
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext()!
         drawFirstLine(context: context)

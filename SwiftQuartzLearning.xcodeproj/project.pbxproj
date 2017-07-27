@@ -14,9 +14,12 @@
 		5DA701AD1F277D8E00B47661 /* SwiftQuartzLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701AC1F277D8E00B47661 /* SwiftQuartzLearningTests.swift */; };
 		5DA701B81F277D8E00B47661 /* SwiftQuartzLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701B71F277D8E00B47661 /* SwiftQuartzLearningUITests.swift */; };
 		5DA701C61F277E1E00B47661 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C51F277E1E00B47661 /* ListTableViewController.swift */; };
-		5DA701C81F27817300B47661 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C71F27817300B47661 /* FirstView.swift */; };
-		5DA701CA1F278CFB00B47661 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C91F278CFB00B47661 /* SecondView.swift */; };
-		947D5F891F28749C001D56B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F881F28749C001D56B3 /* SecondViewController.swift */; };
+		5DA701C81F27817300B47661 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C71F27817300B47661 /* LineView.swift */; };
+		5DA701CA1F278CFB00B47661 /* LineCapJoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701C91F278CFB00B47661 /* LineCapJoinView.swift */; };
+		9416B63C1F299D6F00772A6A /* RectanglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416B63B1F299D6F00772A6A /* RectanglesView.swift */; };
+		9416B63E1F29A4E300772A6A /* PolygonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416B63D1F29A4E300772A6A /* PolygonsView.swift */; };
+		9416B6401F29A4F100772A6A /* PolygonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9416B63F1F29A4F100772A6A /* PolygonsViewController.swift */; };
+		947D5F891F28749C001D56B3 /* LineCapJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F881F28749C001D56B3 /* LineCapJoinViewController.swift */; };
 		947D5F8B1F288460001D56B3 /* DashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F8A1F288460001D56B3 /* DashViewController.swift */; };
 		947D5F8D1F288473001D56B3 /* DashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947D5F8C1F288473001D56B3 /* DashView.swift */; };
 /* End PBXBuildFile section */
@@ -52,9 +55,12 @@
 		5DA701B71F277D8E00B47661 /* SwiftQuartzLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftQuartzLearningUITests.swift; sourceTree = "<group>"; };
 		5DA701B91F277D8E00B47661 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DA701C51F277E1E00B47661 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
-		5DA701C71F27817300B47661 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
-		5DA701C91F278CFB00B47661 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		947D5F881F28749C001D56B3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5DA701C71F27817300B47661 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		5DA701C91F278CFB00B47661 /* LineCapJoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineCapJoinView.swift; sourceTree = "<group>"; };
+		9416B63B1F299D6F00772A6A /* RectanglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectanglesView.swift; sourceTree = "<group>"; };
+		9416B63D1F29A4E300772A6A /* PolygonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonsView.swift; sourceTree = "<group>"; };
+		9416B63F1F29A4F100772A6A /* PolygonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonsViewController.swift; sourceTree = "<group>"; };
+		947D5F881F28749C001D56B3 /* LineCapJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineCapJoinViewController.swift; sourceTree = "<group>"; };
 		947D5F8A1F288460001D56B3 /* DashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashViewController.swift; sourceTree = "<group>"; };
 		947D5F8C1F288473001D56B3 /* DashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,11 +115,14 @@
 			children = (
 				5DA701971F277D8E00B47661 /* AppDelegate.swift */,
 				5DA701C51F277E1E00B47661 /* ListTableViewController.swift */,
-				5DA701C71F27817300B47661 /* FirstView.swift */,
-				5DA701C91F278CFB00B47661 /* SecondView.swift */,
-				947D5F881F28749C001D56B3 /* SecondViewController.swift */,
+				5DA701C71F27817300B47661 /* LineView.swift */,
+				947D5F881F28749C001D56B3 /* LineCapJoinViewController.swift */,
+				5DA701C91F278CFB00B47661 /* LineCapJoinView.swift */,
 				947D5F8A1F288460001D56B3 /* DashViewController.swift */,
 				947D5F8C1F288473001D56B3 /* DashView.swift */,
+				9416B63B1F299D6F00772A6A /* RectanglesView.swift */,
+				9416B63D1F29A4E300772A6A /* PolygonsView.swift */,
+				9416B63F1F29A4F100772A6A /* PolygonsViewController.swift */,
 				5DA7019B1F277D8E00B47661 /* Main.storyboard */,
 				5DA7019E1F277D8E00B47661 /* Assets.xcassets */,
 				5DA701A01F277D8E00B47661 /* LaunchScreen.storyboard */,
@@ -272,9 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DA701C61F277E1E00B47661 /* ListTableViewController.swift in Sources */,
-				5DA701C81F27817300B47661 /* FirstView.swift in Sources */,
-				5DA701CA1F278CFB00B47661 /* SecondView.swift in Sources */,
-				947D5F891F28749C001D56B3 /* SecondViewController.swift in Sources */,
+				9416B6401F29A4F100772A6A /* PolygonsViewController.swift in Sources */,
+				9416B63E1F29A4E300772A6A /* PolygonsView.swift in Sources */,
+				5DA701C81F27817300B47661 /* LineView.swift in Sources */,
+				5DA701CA1F278CFB00B47661 /* LineCapJoinView.swift in Sources */,
+				9416B63C1F299D6F00772A6A /* RectanglesView.swift in Sources */,
+				947D5F891F28749C001D56B3 /* LineCapJoinViewController.swift in Sources */,
 				947D5F8D1F288473001D56B3 /* DashView.swift in Sources */,
 				947D5F8B1F288460001D56B3 /* DashViewController.swift in Sources */,
 				5DA701981F277D8E00B47661 /* AppDelegate.swift in Sources */,

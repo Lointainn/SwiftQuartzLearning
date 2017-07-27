@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  LineCapJoinViewController.swift
 //  SwiftQuartzLearning
 //
 //  Created by Wu on 2017/7/26.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class LineCapJoinViewController: UIViewController {
 
-    @IBOutlet weak var second: SecondView!
+    @IBOutlet weak var second: LineCapJoinView!
     
     @IBOutlet weak var capSegment: UISegmentedControl!
     @IBOutlet weak var joinSegment: UISegmentedControl!
