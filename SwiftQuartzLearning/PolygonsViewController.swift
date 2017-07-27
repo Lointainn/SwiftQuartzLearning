@@ -24,7 +24,7 @@ class PolygonsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        picker.selectRow(Int(polygons.drawMode.rawValue), inComponent: 0, animated: true)
     }
 
 
@@ -41,6 +41,6 @@ class PolygonsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        polygons.drawMode = CGPathDrawingMode(rawValue: Int32(row))!
     }
 }

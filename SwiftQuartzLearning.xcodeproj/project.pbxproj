@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D7B3BF31F2A21D200A7E5A1 /* EllipseArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B3BF21F2A21D200A7E5A1 /* EllipseArcView.swift */; };
 		5DA701981F277D8E00B47661 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA701971F277D8E00B47661 /* AppDelegate.swift */; };
 		5DA7019D1F277D8E00B47661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DA7019B1F277D8E00B47661 /* Main.storyboard */; };
 		5DA7019F1F277D8E00B47661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DA7019E1F277D8E00B47661 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D7B3BF21F2A21D200A7E5A1 /* EllipseArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipseArcView.swift; sourceTree = "<group>"; };
 		5DA701941F277D8E00B47661 /* SwiftQuartzLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuartzLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DA701971F277D8E00B47661 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DA7019C1F277D8E00B47661 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				9416B63B1F299D6F00772A6A /* RectanglesView.swift */,
 				9416B63D1F29A4E300772A6A /* PolygonsView.swift */,
 				9416B63F1F29A4F100772A6A /* PolygonsViewController.swift */,
+				5D7B3BF21F2A21D200A7E5A1 /* EllipseArcView.swift */,
 				5DA7019B1F277D8E00B47661 /* Main.storyboard */,
 				5DA7019E1F277D8E00B47661 /* Assets.xcassets */,
 				5DA701A01F277D8E00B47661 /* LaunchScreen.storyboard */,
@@ -289,6 +292,7 @@
 				947D5F891F28749C001D56B3 /* LineCapJoinViewController.swift in Sources */,
 				947D5F8D1F288473001D56B3 /* DashView.swift in Sources */,
 				947D5F8B1F288460001D56B3 /* DashViewController.swift in Sources */,
+				5D7B3BF31F2A21D200A7E5A1 /* EllipseArcView.swift in Sources */,
 				5DA701981F277D8E00B47661 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
